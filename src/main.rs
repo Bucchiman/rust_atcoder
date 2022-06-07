@@ -1,3 +1,5 @@
+mod abc_212_a;
+
 fn main() {
-    println!("Hello, world!");
+    abc_212_a::abc_212_a();
 }
