@@ -1,6 +1,5 @@
-use proconio::input;
-
-fn main() {
+use proconio:: input;
+pub fn abc_219_a() {
     input! {
         X: usize,
     }
