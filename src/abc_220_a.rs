@@ -6,6 +6,11 @@ pub fn abc_220_a() {
         B: usize,
         C: usize
     }
-    let amari: usize = A % C;
-    println!("{}", 2*C-amari);
+    for n in A..B+1 {
+        if n % C == 0 {
+            println!("{}", n);
+            return;
+        }
+    }
+    println!("{}", -1)
 }

@@ -2,18 +2,8 @@ use proconio::input;
 
 fn main() {
     input! {
-        X: usize,
+        a: u32,
+        b: u32,
     }
-    if X < 40 {
-        println!("{}", 40-X);
-    }
-    else if 40 <= X && X < 70 {
-        println!("{}", 70-X);
-    }
-    else if 70 <= X && X < 90 {
-        println!("{}", 90-X);
-    }
-    else {
-        println!("expert");
-    }
+    println!("{}", 32_i32.pow(a-b))
 }
