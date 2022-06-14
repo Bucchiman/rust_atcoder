@@ -1,6 +1,13 @@
+/*
+ * FileName:     abc_255
+ * CreatedDate:  2022-06-14 18:19:02 +0900
+ * LastModified: 2022-06-14 23:18:24 +0900
+ */
+
 use proconio::input;
 
-fn main() {
+
+pub fn abc_255_a() {
     input! {
         r: usize,
         c: usize,
