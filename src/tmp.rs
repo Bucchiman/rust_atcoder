@@ -1,20 +1,22 @@
 use proconio::input;
 
 fn main() {
-    input! {
-        r: usize,
-        c: usize,
-        a: [[i32; 2]; 2]
+    input!{
+        s: String,
     }
-    println!("{}", a[r-1][c-1])
+    for (i, s_) in s.chars().enumerate(){
+        if i % 2 == 0 && (s_ == 'R' || s_ == 'U' || s_ == 'D'){
+
+        }
+        else if i % 2 == 1 && (s_ == 'L' || s_ == 'U' || s_ == 'D'){
+
+        }
+        else{
+            println!("No");
+            return
+        }
+    }
+    println!("Yes");
+
 }
 
-
-//pub fn abc_255_b() {
-//    input! {
-//        n: usize,
-//        k: usize,
-//        a: [usize; n],
-//    }
-//    let xy: [[i64; 2]; n];
-//}
