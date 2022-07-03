@@ -1,6 +1,14 @@
+/*
+ * FileName:     abc_183
+ * CreatedDate:  2022-07-03 21:46:11 +0900
+ * LastModified: 2022-07-03 21:53:09 +0900
+ */
+
 use proconio::input;
 
-fn main() {
+
+
+pub fn abc_183_a(){
     input!{
         s_x: f32,
         s_y: f32,
