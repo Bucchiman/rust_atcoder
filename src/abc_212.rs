@@ -15,3 +15,14 @@ pub fn abc_212_a() {
         println!("Alloy");
     }
 }
+
+pub fn abc_212_b() {
+    input! {
+        x: String,
+    }
+    let i: i64 = 0;
+    for i in x.as_str().chars() {
+        println!("{}", i);
+    }
+    
+}
