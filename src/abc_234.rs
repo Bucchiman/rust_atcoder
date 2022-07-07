@@ -1,6 +1,13 @@
+/*
+ * FileName:     abc_234
+ * CreatedDate:  2022-07-07 22:58:34 +0900
+ * LastModified: 2022-07-07 23:23:54 +0900
+ */
+
 use proconio::input;
 
-fn main() {
+
+pub fn abc_234_b(){
     input!{
         n: i32,
         xy: [[f64; 2]; n],
