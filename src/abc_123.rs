@@ -1,6 +1,13 @@
+/*
+ * FileName:     abc_123
+ * CreatedDate:  2022-07-07 08:04:52 +0900
+ * LastModified: 2022-07-07 22:45:34 +0900
+ */
+
 use proconio::input;
 
-fn main() {
+
+pub fn abc_123_b(){
     input!{
         a_e: [i32; 5],
     }
@@ -24,6 +31,6 @@ fn main() {
                 ans = ans + (ae - ae % 10) + 10;
             }
         }
+        println!("{}", ans);
     }
-    println!("{}", ans);
 }
