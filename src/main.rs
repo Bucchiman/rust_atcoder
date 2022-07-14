@@ -22,11 +22,12 @@ mod abc_219_a;
 mod abc_220_a;
 mod abc_221_a;
 mod abc_234;
+mod abc_241;
 mod abc_242;
 //mod abc_228;
 mod abc_254;
 mod abc_255;
 
 fn main() {
-    abc_216::abc_216_b();
+    abc_241::abc_241_a();
 }

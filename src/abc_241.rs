@@ -1,6 +1,13 @@
+/*
+ * FileName:     abc_241
+ * CreatedDate:  2022-07-15 08:12:24 +0900
+ * LastModified: 2022-07-15 08:18:30 +0900
+ */
+
 use proconio::input;
 
-fn main() {
+
+pub fn abc_241_a() {
     input!{
         a: [i32; 10],
     }
