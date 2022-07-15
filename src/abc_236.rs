@@ -1,6 +1,13 @@
+/*
+ * FileName:     abc_236
+ * CreatedDate:  2022-07-15 08:28:10 +0900
+ * LastModified: 2022-07-15 18:03:01 +0900
+ */
+
 use proconio::input;
 
-fn main() {
+
+pub fn abc_236_a() {
     input!{
         s: String,
         a: usize,
