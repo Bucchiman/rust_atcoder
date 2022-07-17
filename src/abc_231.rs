@@ -1,8 +1,14 @@
+/*
+ * FileName:     abc_231
+ * CreatedDate:  2022-07-17 14:33:56 +0900
+ * LastModified: 2022-07-17 15:20:48 +0900
+ */
+
 use proconio::input;
 use std::collections::HashMap;
 
 
-fn main() {
+pub fn abc_231_b() {
     input!{
         n: usize,
         s: [String; n],
