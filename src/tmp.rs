@@ -1,10 +1,16 @@
 use proconio::input;
 
 fn main() {
-    input!{
-        l: usize,
-        r: usize,
+    input! {
+        n: i32,
         s: String,
     }
-    println!("{}{}{}", &s[0..(l-1)], &s[(l-1)..r].chars().rev().collect::<String>(), &s[r..s.len()]);
+    for (i, _s) in s.chars().enumerate(){
+        if (i == (n-1) as usize && _s == 'o'){
+            println!("Yes");
+        }
+        else if (i == (n-1) as usize && _s == 'x'){
+            println!("No");
+        }
+    }
 }
