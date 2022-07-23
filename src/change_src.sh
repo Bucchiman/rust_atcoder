@@ -2,7 +2,7 @@
 #
 # FileName: 	change_src
 # CreatedDate:  2022-06-07 23:28:02 +0900
-# LastModified: 2022-07-20 22:55:24 +0900
+# LastModified: 2022-07-21 08:49:58 +0900
 #
 
 
@@ -26,6 +26,7 @@ do
 done
 
 echo "use proconio::input;\n" > tmp.rs
+echo "use std::collections::HashMap;\n" >> tmp.rs
 cat $object_file | awk -v flag=0 -v fn="${name_func}" '
 {
     if ($3 == fn || $3 == fn "()" || $3 == fn "(){" || flag == 1){

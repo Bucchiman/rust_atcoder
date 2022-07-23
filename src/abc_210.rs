@@ -1,8 +1,14 @@
+/*
+ * FileName:     abc_210
+ * CreatedDate:  2022-07-21 08:12:29 +0900
+ * LastModified: 2022-07-23 23:37:40 +0900
+ */
+
 use proconio::input;
-use std::convert::TryInto;
 use std::collections::HashMap;
 
-fn main() {
+
+pub fn abc_210_c() {
     input!{
         n: i64,
         k: i64,
@@ -10,8 +16,6 @@ fn main() {
     }
     let mut map = HashMap::new();
     let mut ans:i64 = 0;
-    let mut i:i64 = 0;
-    let mut j:i64 = 0;
     for i in 0..(n-k+1) {
         if i == 0 {
             for j in i..k{
