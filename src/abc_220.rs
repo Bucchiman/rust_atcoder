@@ -1,7 +1,5 @@
 use proconio::input;
 
-use std::collections::HashMap;
-
 
 pub fn rec(a: i64, k: i64) -> i64{
     let mut ans: i64 = 1;
@@ -11,7 +9,22 @@ pub fn rec(a: i64, k: i64) -> i64{
     return ans;
 }
 
-fn main() {
+pub fn abc_220_a() {
+    input! {
+        A: usize,
+        B: usize,
+        C: usize
+    }
+    for n in A..B+1 {
+        if n % C == 0 {
+            println!("{}", n);
+            return;
+        }
+    }
+    println!("{}", -1)
+}
+
+pub fn abc_220_b() {
     input!{
         k: i64,
         a: String,
