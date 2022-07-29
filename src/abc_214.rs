@@ -1,8 +1,29 @@
+/*
+ * FileName:     abc_214
+ * CreatedDate:  2022-07-29 22:19:21 +0900
+ * LastModified: 2022-07-29 23:27:11 +0900
+ */
+
 use proconio::input;
 
-use std::collections::HashMap;
 
-fn main() {
+
+pub fn abc_214_a(){
+    input! {
+        N: usize,
+    }
+    if 1 <= N && N <= 125 {
+        println!("4");
+    }
+    else if 126 <= N && N <= 211 {
+        println!("5");
+    }
+    else {
+        println!("6");
+    }
+}
+
+pub fn abc_214_c() {
     input!{
         n: i64,
         s: [i64; n],

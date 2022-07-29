@@ -16,3 +16,20 @@ pub fn abc_217_a() {
         println!("No");
     }
 }
+
+
+
+pub fn abc_217_b() {
+    input!{
+        n: usize,
+        p: [usize; n],
+    }
+    let mut q = vec![0; n];
+    for (i, _p) in p.iter().enumerate(){
+        q[(_p-1) as usize] = i+1;
+    }
+    for _q in q.iter(){
+        print!("{} ", _q);
+    }
+    println!("");
+}
