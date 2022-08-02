@@ -1,13 +1,13 @@
 /*
  * FileName:     abc_123
  * CreatedDate:  2022-07-07 08:04:52 +0900
- * LastModified: 2022-07-07 22:45:34 +0900
+ * LastModified: 2022-08-02 21:40:59 +0900
  */
 
 use proconio::input;
 
 
-pub fn abc_123_b(){
+pub fn abc_123_b() {
     input!{
         a_e: [i32; 5],
     }

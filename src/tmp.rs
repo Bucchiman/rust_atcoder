@@ -4,27 +4,18 @@ use std::collections::HashMap;
 
 fn main() {
     input!{
-        n: i64,
-        s: [i64; n],
-        t: [i64; n]
+        n: i32,
+        mut v: [i32; n],
     }
-    let mut i: i64 = 0;
-    let mut time: i64 = 0;
-    while i<n {
+    v.sort();
+    let mut ans:f32 = 0.0;
+    for i in 0..n{
         if i == 0{
-            println!("{}", t[i as usize]);
-            time = t[0];
-            i += 1;
-            continue;
-        }
-        if time+s[(i-1) as usize] < t[i as usize]{
-            time += s[(i-1) as usize];
-            println!("{}", time);
+            ans = v[i as usize] as f32;
         }
         else{
-            println!("{}", t[i as usize]);
-            time = t[i as usize];
+            ans = ((v[i as usize] as f32)+ans)/2.0;
         }
-        i += 1;
     }
+    println!("{}", ans);
 }
